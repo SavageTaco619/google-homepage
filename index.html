@@ -10,28 +10,28 @@
       image-rendering: optimizeQuality;
     }
     nav {
-        height: 50px;
-        width: 100%;
-        margin: 0;
-        border: 1px solid black;
-    }
-    .nav-left {
-      float: left;
-    }
-    .nav-right {
-      float: right;
-    }
-    li {
-      display: block;
-      text-align: center;
-    }
-    ul {
-      list-style-type: none;
+      display: grid;
+      grid-template-columns: auto auto 1fr auto auto auto auto;
+      height: 46px;
+      width: 100%;
       margin: 0;
       padding: 0;
-      overflow: hidden;
-      height: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      color: rgba(0,0,0,0.87);
     }
+    .nav-left {
+        justify-self: start;
+        align-self: center;
+        padding: 0 10px;
+    }
+
+    .nav-right {
+        justify-self: right;
+        align-self: center;
+        padding: 0 11px;
+    }
+    
     #menu-icon {
       height: 20px;
       image-rendering: crisp-edges;
@@ -79,16 +79,13 @@
   </style>
   <body>
     <nav>
-      <ul>
-        <li class="nav-left">About</li>
-        <li class="nav-left">Store</li>
-        <li><button class="nav-right">Sign in</button></li>
-        <li class="nav-right">
-          <img id="menu-icon" src="images/menu-icon.png" alt="" />
-        </li>
-        <li class="nav-right">Images</li>
-        <li class="nav-right">Gmail</li>
-      </ul>
+      <p class="nav-left">About</p>
+      <p class="nav-left">Store</p>
+      <p></p>
+      <p class="nav-right">Gmail</p>
+      <p class="nav-right">Images</p>
+      <img class="nav-right" id="menu-icon" src="images/menu-icon.png" alt="" />
+      <a class="nav-right" href="">Sign in</a>
     </nav>
     <img
       id="googleLogo"
@@ -110,6 +107,5 @@
         alt="voice search"
       />
     </div>
-    <h2>This is a test</h2>
   </body>
 </html>
