@@ -9,6 +9,34 @@
     img {
       image-rendering: optimizeQuality;
     }
+    nav {
+        height: 50px;
+        width: 100%;
+        margin: 0;
+        border: 1px solid black;
+    }
+    .nav-left {
+      float: left;
+    }
+    .nav-right {
+      float: right;
+    }
+    li {
+      display: block;
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 50px;
+    }
+    #menu-icon {
+      height: 20px;
+      image-rendering: crisp-edges;
+      opacity: 0.55;
+    }
     #googleLogo {
       display: block;
       padding-top: 109px;
@@ -50,6 +78,18 @@
     }
   </style>
   <body>
+    <nav>
+      <ul>
+        <li class="nav-left">About</li>
+        <li class="nav-left">Store</li>
+        <li><button class="nav-right">Sign in</button></li>
+        <li class="nav-right">
+          <img id="menu-icon" src="images/menu-icon.png" alt="" />
+        </li>
+        <li class="nav-right">Images</li>
+        <li class="nav-right">Gmail</li>
+      </ul>
+    </nav>
     <img
       id="googleLogo"
       src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
@@ -70,6 +110,5 @@
         alt="voice search"
       />
     </div>
-    <h1>test</h1>
   </body>
 </html>
