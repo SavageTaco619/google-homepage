@@ -3,9 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Google</title>
   </head>
+  <style>
+    div {
+      display: block;
+    }
+    #googleLogo {
+      display: block;
+      padding-top: 109px;
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+    }
+    form {
+      text-align: center;
+    }
+  </style>
   <body>
-    <h1>Hello, World!</h1>
+    <img
+      id="googleLogo"
+      src="/images/googlelogo_color_272x92dp.png"
+      alt="Google"
+      height="92"
+    />
+    <div id="form-container">
+      <form>
+        <input
+          id="search"
+          maxlength="2048"
+          type="text"
+          role="combobox"
+          title="Search"
+        />
+      </form>
+    </div>
   </body>
 </html>
