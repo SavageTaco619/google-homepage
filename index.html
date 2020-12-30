@@ -10,32 +10,63 @@
       image-rendering: optimizeQuality;
     }
     nav {
+<<<<<<< HEAD
       height: 50px;
       width: 100%;
       margin: 0;
       border: 1px solid black;
-    }
-    .nav-left {
-      float: left;
-    }
-    .nav-right {
-      float: right;
-    }
-    li {
-      display: block;
-      text-align: center;
-    }
-    ul {
-      list-style-type: none;
+=======
+      display: grid;
+      grid-template-columns: auto auto 1fr auto auto auto auto;
+      height: 46px;
+      width: 100%;
       margin: 0;
       padding: 0;
-      overflow: hidden;
-      height: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.87);
+>>>>>>> grid-nav
     }
+    .nav-left {
+      justify-self: start;
+      align-self: center;
+      padding: 0 10px;
+    }
+
+    .nav-right {
+      justify-self: right;
+      align-self: center;
+      padding: 0 11px;
+    }
+
     #menu-icon {
       height: 20px;
       image-rendering: crisp-edges;
       opacity: 0.55;
+    }
+    #menu-icon:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+    a:link {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.87);
+    }
+    a:hover {
+      text-decoration: underline;
+      color: rgba(0, 0, 0, 0.87);
+    }
+    a:visited {
+      color: rgba(0, 0, 0, 0.87);
+    }
+    #sign-in {
+      text-decoration: none;
+      background-color: rgb(66, 133, 244);
+      color: white;
+      line-height: 28px;
+      border-radius: 2px;
+      margin: 0 20px;
+      cursor: default;
     }
     #googleLogo {
       display: block;
@@ -78,24 +109,24 @@
     }
   </style>
   <body>
+    <!--Nav Bar-->
     <nav>
-      <ul>
-        <li class="nav-left">About</li>
-        <li class="nav-left">Store</li>
-        <li><button class="nav-right">Sign in</button></li>
-        <li class="nav-right">
-          <img id="menu-icon" src="images/menu-icon.png" alt="" />
-        </li>
-        <li class="nav-right">Images</li>
-        <li class="nav-right">Gmail</li>
-      </ul>
+      <a href="" class="nav-left">About</a>
+      <a href="" class="nav-left">Store</a>
+      <p></p>
+      <a href="" class="nav-right">Gmail</a>
+      <a href="" class="nav-right">Images</a>
+      <img class="nav-right" id="menu-icon" src="images/menu-icon.png" alt="" />
+      <a class="nav-right" id="sign-in" href="">Sign in</a>
     </nav>
+    <!--Google Logo-->
     <img
       id="googleLogo"
       src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
       alt="Google"
       height="92"
     />
+    <!--Search bar-->
     <div id="form-container">
       <img
         id="search-icon"
@@ -110,6 +141,5 @@
         alt="voice search"
       />
     </div>
-    <h2>This is a test</h2>
   </body>
 </html>
