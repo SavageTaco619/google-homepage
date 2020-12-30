@@ -6,6 +6,9 @@
     <title>Google</title>
   </head>
   <style>
+      img {
+        image-rendering: optimizeQuality;
+      }
     #googleLogo {
       display: block;
       padding-top: 109px;
@@ -15,25 +18,35 @@
     }
     #form-container {
       display: grid;
-      grid-template-columns: 40px 1fr 40px;
+      grid-template-columns: 50px 1fr 50px;
       margin-left: auto;
       margin-right: auto;
       margin-top: 30px;
       height: 44px;
       width: 582px;
-      border: 1px solid #c1c2c5e7;
+      border: 1px solid #dfe1e5;
       border-radius: 24px;
+    }
+    #form-container:hover {
+      box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+      border-color: rgba(223, 225, 229, 0);
     }
     form {
       color: blue;
       justify-self: center;
-      align-self:flex-start;
+      align-self: flex-start;
     }
     #search-icon {
-        height: 20px;
-        width: auto;
-        justify-self: center;
-        align-self: center;
+      height: 20px;
+      width: auto;
+      justify-self: center;
+      align-self: center;
+    }
+    #search {
+      border: none;
+    }
+    #search:focus {
+      outline: none;
     }
   </style>
   <body>
@@ -44,15 +57,13 @@
       height="92"
     />
     <div id="form-container">
-       <img id="search-icon" src="images/search-icon.png" alt="Search icon">
-        <input
-          id="search"
-          maxlength="2048"
-          type="text"
-          role="combobox"
-          title="Search"
-        />
-        <img id="search-icon" src="images/1200px-Google_mic.svg.png" alt="voice search">
+      <img id="search-icon" src="images/search-icon.png" alt="Search icon" />
+      <input id="search" type="text" title="Search" />
+      <img
+        id="search-icon"
+        src="images/1200px-Google_mic.svg.png"
+        alt="voice search"
+      />
     </div>
   </body>
 </html>
