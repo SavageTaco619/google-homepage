@@ -38,21 +38,28 @@
       opacity: 0.55;
     }
     #menu-icon:hover {
-        opacity: 1;
+      opacity: 1;
+      cursor: pointer;
     }
     a:link {
-        text-decoration: none;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.87);
     }
     a:hover {
-        text-decoration: underline;
+      text-decoration: underline;
+      color: rgba(0, 0, 0, 0.87);
+    }
+    a:visited {
+      color: rgba(0, 0, 0, 0.87);
     }
     #sign-in {
-        text-decoration: none;
-        background-color:rgb(66, 133, 244);
-        color: white;
-        line-height: 28px;
-        border-radius: 2px;
-        margin: 0 20px;
+      text-decoration: none;
+      background-color: rgb(66, 133, 244);
+      color: white;
+      line-height: 28px;
+      border-radius: 2px;
+      margin: 0 20px;
+      cursor: default;
     }
     #googleLogo {
       display: block;
@@ -97,11 +104,11 @@
   <body>
     <!--Nav Bar-->
     <nav>
-      <p class="nav-left">About</p>
-      <p class="nav-left">Store</p>
+      <a href="" class="nav-left">About</a>
+      <a href="" class="nav-left">Store</a>
       <p></p>
-      <p class="nav-right">Gmail</p>
-      <p class="nav-right">Images</p>
+      <a href="" class="nav-right">Gmail</a>
+      <a href="" class="nav-right">Images</a>
       <img class="nav-right" id="menu-icon" src="images/menu-icon.png" alt="" />
       <a class="nav-right" id="sign-in" href="">Sign in</a>
     </nav>
