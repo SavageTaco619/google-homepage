@@ -100,6 +100,31 @@
     #search:focus {
       outline: none;
     }
+    footer {
+      position: fixed;
+      height: 40px;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #f2f2f2;
+      color: #5f6368;
+      display: grid;
+      grid-template-columns: auto auto auto 1fr auto auto auto;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      border-top: 1px solid rgb(228, 228, 228);
+    }
+    .footer-left {
+      justify-self: start;
+      align-self: center;
+      padding: 0 10px;
+    }
+
+    .footer-right {
+      justify-self: right;
+      align-self: center;
+      padding: 0 11px;
+    }
   </style>
   <body>
     <!--Nav Bar-->
@@ -134,5 +159,15 @@
         alt="voice search"
       />
     </div>
+    <!--Footer-->
+    <footer>
+      <a href="" class="footer-left">Advertising</a>
+      <a href="" class="footer-left">Business</a>
+      <a href="" class="footer-left">How Search works</a>
+      <p></p>
+      <a href="" class="footer-right">Privacy</a>
+      <a href="" class="footer-right">Terms</a>
+      <a href="" class="footer-right">Setting</a>
+    </footer>
   </body>
 </html>
